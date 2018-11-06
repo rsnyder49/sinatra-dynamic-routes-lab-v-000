@@ -25,7 +25,8 @@ class App < Sinatra::Base
     @op = params[:operation]
     @num1 = params[:number1]
     @num2 = params[:number2]
-    "#{@num1} #{@op} #{@num2}"
+    if @op == "add"
+      "#{@num1} + #{@num2}"
   end 
   
 end
