@@ -27,6 +27,8 @@ class App < Sinatra::Base
     @num2 = params[:number2]
     if @op == "add"
       "#{@num1} + #{@num2}"
+    elsif @op == "subtract"
+      "#{@num1} - #{@num2}"
   end 
   
 end
